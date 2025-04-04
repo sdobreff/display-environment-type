@@ -1,18 +1,18 @@
 /* At a glance icons */
 
-#dashboard_right_now li > span.det-env-type::before {
+#dashboard_right_now li>span.det-env-type::before {
 	content: "\f339";
 }
 
-#dashboard_right_now li > span.det-env-type.det-production::before {
+#dashboard_right_now li>span.det-env-type.det-production::before {
 	content: "\f319";
 }
 
-#dashboard_right_now li > span.det-env-type.det-staging::before {
+#dashboard_right_now li>span.det-env-type.det-staging::before {
 	content: "\f111";
 }
 
-#dashboard_right_now li > span.det-env-type.det-development::before {
+#dashboard_right_now li>span.det-env-type.det-development::before {
 	content: "\f107";
 }
 
@@ -23,10 +23,30 @@
 	color: inherit;
 }
 
+#wpadminbar ul li#wp-admin-bar-det_env_type .ab-sub-wrapper {
+	right: 0;
+}
+
+#wpadminbar ul li#wp-admin-bar-det_env_type .ab-sub-wrapper .ab-item {
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+#wpadminbar ul li#wp-admin-bar-det_env_type .ab-sub-wrapper .ab-item:hover {
+	background-color: fade(#fff, 10%);
+}
+
 #wpadminbar ul li#wp-admin-bar-det_env_type {
-	pointer-events: none;
+	/* pointer-events: none; */
 	background-color: #0080a8;
 	color: #fff;
+}
+
+#wpadminbar ul li#wp-admin-bar-det_env_type .ei-value {
+	min-width: 1.5rem;
+	text-align: right;
 }
 
 #wpadminbar ul li#wp-admin-bar-det_env_type.det-production {
@@ -44,25 +64,23 @@
 
 /* Admin bar icons */
 
-#wp-admin-bar-det_env_type > div > span.ab-icon::before {
+#wp-admin-bar-det_env_type>div>span.ab-icon::before {
 	content: "\f339";
 	top: 2px;
 	color: inherit;
 }
 
-#wp-admin-bar-det_env_type.det-production > div > span.ab-icon::before {
+#wp-admin-bar-det_env_type.det-production>div>span.ab-icon::before {
 	content: "\f319";
 	top: 3px;
 }
 
-#wp-admin-bar-det_env_type.det-staging > div > span.ab-icon::before {
+#wp-admin-bar-det_env_type.det-staging>div>span.ab-icon::before {
 	content: "\f111";
 	top: 1px;
 }
 
-#wp-admin-bar-det_env_type.det-development > div > span.ab-icon::before {
+#wp-admin-bar-det_env_type.det-development>div>span.ab-icon::before {
 	content: "\f107";
 	top: 2px;
 }
-
-

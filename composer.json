@@ -1,0 +1,23 @@
+{
+    "name": "sdobreff/display-environment-type",
+    "description": "Display Environment Type",
+    "type": "wordpress-plugin",
+    "version": "1.3.5",
+    "authors": [
+        {
+            "name": "Display Environment Type",
+            "email": "sdobreffm@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "DET\\": [
+                "classes/"
+            ]
+        },
+        "classmap": [
+          "classes/"
+        ]
+    }
+}
