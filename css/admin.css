@@ -84,3 +84,10 @@
 	content: "\f107";
 	top: 2px;
 }
+
+@media screen and (max-width: 782px) {
+	#wpadminbar li#wp-admin-bar-det_env_type {
+		display: block;
+		position: static;
+	}
+}

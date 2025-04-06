@@ -287,3 +287,14 @@ if ( ! class_exists( '\DET\Display_Environment_Type' ) ) {
 		}
 	}
 }
+/*
+@media screen and (max-width: 782px) {
+  #wpadminbar li#wp-admin-bar-det_env_type {
+    display: block;
+  }
+}
+
+#wpadminbar .ab-sub-wrapper, #wpadminbar ul, #wpadminbar ul li {
+	position: initial;
+}
+*/
