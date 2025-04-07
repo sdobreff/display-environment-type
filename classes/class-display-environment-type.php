@@ -90,7 +90,7 @@ if ( ! class_exists( '\DET\Display_Environment_Type' ) ) {
 			 * @param string $name     The translated environment name.
 			 * @param string $env_type The environment type key.
 			 */
-			return apply_filters( 'display_environment_type_name', $name, $env_type );
+			return \apply_filters( 'display_environment_type_name', $name, $env_type );
 		}
 
 		/**
@@ -107,7 +107,7 @@ if ( ! class_exists( '\DET\Display_Environment_Type' ) ) {
 			$env_type_name = self::get_env_type_name( $env_type );
 
 			if ( ! empty( $env_type ) ) {
-				$items[] = '<span class="' . \esc_attr( 'det-env-type det-' . $env_type ) . '" title="' . esc_attr__( 'Environment Type', 'display-environment-type' ) . '">' . \esc_html( $env_type_name ) . '</span>';
+				$items[] = '<span class="' . \esc_attr( 'det-env-type det-' . $env_type ) . '" title="' . \esc_attr__( 'Environment Type', 'display-environment-type' ) . '">' . \esc_html( $env_type_name ) . '</span>';
 			}
 
 			return $items;
@@ -131,7 +131,7 @@ if ( ! class_exists( '\DET\Display_Environment_Type' ) ) {
 					array(
 						'id'     => 'det_env_type',
 						'parent' => 'top-secondary',
-						'title'  => '<span class="ab-icon" aria-hidden="true"></span><span class="ab-label">' . esc_html( $env_type_name ) . '</span>',
+						'title'  => '<span class="ab-icon" aria-hidden="true"></span><span class="ab-label">' . \esc_html( $env_type_name ) . '</span>',
 						'meta'   => array(
 							'class' => 'det-' . \sanitize_title( $env_type ),
 						),
@@ -197,6 +197,14 @@ if ( ! class_exists( '\DET\Display_Environment_Type' ) ) {
 						)
 					);
 				}
+
+				$admin_bar->add_node(
+					array(
+						'id'     => 'det-wp',
+						'title'  => self::show_label_value( 'WP', \get_bloginfo( 'version', 'display' ) ),
+						'parent' => 'det_env_type',
+					)
+				);
 
 				$admin_bar->add_node(
 					array(
