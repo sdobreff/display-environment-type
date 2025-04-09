@@ -4,7 +4,7 @@ Tags: environment, dtap, production, staging, development
 Requires at least: 5.5
 Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv3
 
 Displays WordPress 5.5's new environment type setting in the admin bar and the 'at a glance' dashboard widget.
@@ -51,10 +51,13 @@ For additional control, you can use the 'det_display_environment_type' filter ho
  
 == Changelog ==
 
-= 1.4.0 (2024-03-07) =
+= 1.4.1 (2024-04-09) =
+* Fixed UI problem with staging and drop-down menu becomes unreadable (thanks @ericsackett).
+
+= 1.4.0 (2024-04-07) =
 * Code improvements and UI fixes - showing icon on mobile, and set colors on At a Glance. Added WP version in drop-down menu.
 
-= 1.3.5 (2025-03-04) =
+= 1.3.5 (2025-04-04) =
 * Added a drop-down submenu with WP constants and their values (enabled / disabled).
 
 = 1.3.4 (2024-12-20) =
