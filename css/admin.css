@@ -64,6 +64,10 @@
 	color: #000;
 }
 
+#wpadminbar ul li#wp-admin-bar-det_env_type.det-staging li {
+	color: #fff;
+}
+
 #dashboard_right_now li>span.det-env-type.det-staging, #dashboard_right_now li>span.det-env-type.det-staging::before {
 	color: #d79d00;
 }
